@@ -17,7 +17,7 @@ module.exports = {
       },
       items: [
         {
-          to: 'docs/',
+          to: 'docs/gettingStarted',
           activeBasePath: 'docs',
           label: 'Docs',
           position: 'left',
@@ -42,7 +42,7 @@ module.exports = {
             },
             {
               label: 'Contributions',
-              to: 'docs/',
+              to: 'docs/contributions',
             },
           ],
         },
@@ -78,15 +78,6 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/Peppermint-Lab/docs/edit/master/website/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/Peppermint-Lab/docs/edit/master/website/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
