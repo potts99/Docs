@@ -12,8 +12,7 @@ const features = [
     imageUrl: 'img/undraw_docusaurus_mountain.svg',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Want to test it out first? We have one click installs for digital ocean and docker images available for quick and easy deployment
       </>
     ),
   },
