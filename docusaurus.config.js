@@ -38,11 +38,11 @@ module.exports = {
           items: [
             {
               label: 'Getting Started',
-              to: 'docs/',
+              to: 'docs/gettingStarted',
             },
             {
               label: 'Contributions',
-              to: 'docs/doc2/',
+              to: 'docs/',
             },
           ],
         },
@@ -52,10 +52,6 @@ module.exports = {
             {
               label: 'Discord',
               href: 'https://discord.gg/2FnCxPk4wx',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
             },
           ],
         },
