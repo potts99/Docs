@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'Peppermint 🍵',
+  title: 'Peppermint',
   tagline: 'An open source ticket management system',
   url: 'https://pmint.dev',
   baseUrl: '/',

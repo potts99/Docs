@@ -6,15 +6,16 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
 
+// import logo from "img/logo.png";
+
 const features = [
   {
     title: "Easy to Use",
     imageUrl: "img/docker.svg",
     description: (
       <>
-        Want to test it out first? We have 
-        docker images available for quick and easy deployment.
-        With one click installs coming soon.™
+        Want to test it out first? We have docker images available for quick and
+        easy deployment. With one click installs coming soon.™
       </>
     ),
   },
@@ -23,9 +24,9 @@ const features = [
     imageUrl: "img/undraw_team.svg",
     description: (
       <>
-        Peppermint is great for teams or solo use and caters for any
-        situation. If you feel like a certain feature is lacking then feel free 
-        to let us know.
+        Peppermint is great for teams or solo use and caters for any situation.
+        If you feel like a certain feature is lacking then feel free to let us
+        know.
       </>
     ),
   },
@@ -34,8 +35,8 @@ const features = [
     imageUrl: "img/undraw_dev.svg",
     description: (
       <>
-        Feature requests can be made on our Github issues page and contributions can be 
-        made by devs that find bugs or flaws in our product.
+        Feature requests can be made on our Github issues page and contributions
+        can be made by devs that find bugs or flaws in our product.
       </>
     ),
   },
@@ -61,12 +62,15 @@ function Home() {
   const { siteConfig = {} } = context;
   return (
     <Layout
-      title={'Alpha V0.1'}
+      title={"Alpha V0.1"}
       description="Peppermint. A ticket management system"
     >
       <header className={clsx("hero hero--primary", styles.heroBanner)}>
         <div className="container">
-          <h1 className="hero__title">{siteConfig.title}</h1>
+          <h1 className="hero__title">
+            {siteConfig.title}
+          </h1>
+          <img src="/img/logo.png" style={{ width: 75 }} />
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <div className={styles.buttons}>
             <Link
