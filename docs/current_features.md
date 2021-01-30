@@ -15,3 +15,4 @@ title: Current Features
 - Admin Panel with Role
 - Password reset through Admin Panel / user settings
 - Docker Image & Docker-Compose 
+- Client Notes
