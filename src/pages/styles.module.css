@@ -27,6 +27,11 @@
   justify-content: center;
 }
 
+.buttons :hover {
+  background-color: #25c2a0;
+  color: #fff;
+}
+
 .features {
   display: flex;
   align-items: center;
