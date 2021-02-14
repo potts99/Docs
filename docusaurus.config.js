@@ -72,12 +72,6 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} Peppermint-Labs, Inc. Built with Docusaurus.`,
     },
   },
-  plugins: ['@docusaurus/plugin-google-analytics'],
-  themeConfig: {
-    googleAnalytics: {
-      trackingID: 'G-JJJMFZZQQJ',
-    },
-  },
   presets: [
     [
       '@docusaurus/preset-classic',
