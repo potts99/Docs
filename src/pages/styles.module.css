@@ -19,6 +19,15 @@
   .heroBanner {
     padding: 2rem;
   }
+  .hero__title {
+    font-size: 2em !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .hero_title {
+    font-size: 2em !important;
+  }
 }
 
 .buttons {
@@ -44,4 +53,8 @@
   width: 200px;
   margin-Top: 75;
   transform: "rotate(5deg)"
+}
+
+.hero_title {
+  font-size: 3em;
 }

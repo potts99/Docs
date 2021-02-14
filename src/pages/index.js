@@ -5,6 +5,7 @@ import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
+import Typist from "react-typist";
 
 const features = [
   {
@@ -22,9 +23,9 @@ const features = [
     imageUrl: "img/undraw_team.svg",
     description: (
       <>
-        Peppermint is great for solo use, or for teams and caters for any situation.
-        If you feel like a certain feature is lacking then feel free to let us
-        know.
+        Peppermint is great for solo use, or for teams and caters for any
+        situation. If you feel like a certain feature is lacking then feel free
+        to let us know.
       </>
     ),
   },
@@ -68,9 +69,22 @@ function Home() {
           <div className="col col--6">
             <header className={clsx("hero hero--primary", styles.heroBanner)}>
               <div className="container">
-                <h1 className="hero__title">{siteConfig.title}</h1>
-                <img src="/img/logo.png" style={{ width: 75 }} />
-                <p className="hero__subtitle">{siteConfig.tagline}</p>
+                <h1 className="hero__title">Welcome to {siteConfig.title}</h1>
+                <p className="hero__subtitle">
+                  {siteConfig.tagline}
+                  <br />
+                  <Typist>
+                    <span>on premise? </span>
+                    <Typist.Backspace count={14} delay={400} />
+                    <span>in the cloud? </span>
+                    <Typist.Backspace count={15} delay={400} />
+                    <span>on a NAS? </span>
+                    <Typist.Backspace count={15} delay={400} />
+                    <span>
+                      All your tickets in the palm of your hand. 
+                    </span>
+                  </Typist>
+                </p>
                 <div className={styles.buttons}>
                   <Link
                     className={clsx(
@@ -85,9 +99,17 @@ function Home() {
               </div>
             </header>
           </div>
-          <div className="col col--6" style={{ marginTop: 75, transform: "rotate(5deg)", height: 250, width: 250}}>
+          <div
+            className="col col--6"
+            style={{
+              marginTop: 75,
+              transform: "rotate(5deg)",
+              height: 200,
+              width: 200,
+            }}
+          >
             <img src="/img/screenshot_home.png" />
-        </div>
+          </div>
         </div>
       </div>
       <main>
