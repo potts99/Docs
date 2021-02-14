@@ -6,8 +6,6 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
 
-// import logo from "img/logo.png";
-
 const features = [
   {
     title: "Easy to Use",
@@ -20,18 +18,18 @@ const features = [
     ),
   },
   {
-    title: "Made for Solo or Teams",
+    title: "Made for solo or teams",
     imageUrl: "img/undraw_team.svg",
     description: (
       <>
-        Peppermint is great for teams or solo use and caters for any situation.
+        Peppermint is great for solo use, or for teams and caters for any situation.
         If you feel like a certain feature is lacking then feel free to let us
         know.
       </>
     ),
   },
   {
-    title: "Powered by Open Source",
+    title: "Powered by Open-source",
     imageUrl: "img/undraw_dev.svg",
     description: (
       <>
@@ -65,26 +63,33 @@ function Home() {
       title={"Alpha V0.1"}
       description="Peppermint. A ticket management system"
     >
-      <header className={clsx("hero hero--primary", styles.heroBanner)}>
-        <div className="container">
-          <h1 className="hero__title">
-            {siteConfig.title}
-          </h1>
-          <img src="/img/logo.png" style={{ width: 75 }} />
-          <p className="hero__subtitle">{siteConfig.tagline}</p>
-          <div className={styles.buttons}>
-            <Link
-              className={clsx(
-                "button button--outline button--secondary button--lg",
-                styles.getStarted
-              )}
-              to={useBaseUrl("docs/gettingStarted")}
-            >
-              Get Started
-            </Link>
+      <div className="container">
+        <div className="row">
+          <div className="col col--6">
+            <header className={clsx("hero hero--primary", styles.heroBanner)}>
+              <div className="container">
+                <h1 className="hero__title">{siteConfig.title}</h1>
+                <img src="/img/logo.png" style={{ width: 75 }} />
+                <p className="hero__subtitle">{siteConfig.tagline}</p>
+                <div className={styles.buttons}>
+                  <Link
+                    className={clsx(
+                      "button button--outline button--secondary button--lg",
+                      styles.getStarted
+                    )}
+                    to={useBaseUrl("docs/gettingStarted")}
+                  >
+                    Get Started
+                  </Link>
+                </div>
+              </div>
+            </header>
           </div>
+          <div className="col col--6" style={{ marginTop: 75, transform: "rotate(5deg)", height: 250, width: 250}}>
+            <img src="/img/screenshot_home.png" />
         </div>
-      </header>
+        </div>
+      </div>
       <main>
         {features && features.length > 0 && (
           <section className={styles.features}>
