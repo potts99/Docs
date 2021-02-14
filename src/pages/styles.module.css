@@ -24,12 +24,6 @@
   }
 }
 
-@media screen and (max-width: 400px) {
-  .hero_title {
-    font-size: 2em !important;
-  }
-}
-
 .buttons {
   display: flex;
   align-items: center;
