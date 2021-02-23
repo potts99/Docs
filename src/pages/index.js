@@ -67,10 +67,10 @@ function Home() {
       <div className="container">
         <div className="row">
           <div className="col col--6">
-            <header className={clsx("hero hero--primary", styles.heroBanner)}>
+            <header className={clsx("heroBanner", styles.heroBanner)}>
               <div className="container">
-                <h1 className="hero__title">Welcome to {siteConfig.title}</h1>
-                <p className="hero__subtitle">
+                <h1 className="hero_title">{siteConfig.title} 🍵</h1>
+                <h3 className="hero_subtitle">
                   {siteConfig.tagline}
                   <br />
                   <Typist>
@@ -80,11 +80,9 @@ function Home() {
                     <Typist.Backspace count={15} delay={400} />
                     <span>on a NAS? </span>
                     <Typist.Backspace count={15} delay={400} />
-                    <span>
-                      All your tickets in the palm of your hand. 
-                    </span>
+                    <span>All your tickets in the palm of your hand.</span>
                   </Typist>
-                </p>
+                </h3>
                 <div className={styles.buttons}>
                   <Link
                     className={clsx(
@@ -100,19 +98,16 @@ function Home() {
             </header>
           </div>
           <div
-            className="col col--6"
+            className="col col--6 logo"
             style={{
-              marginTop: 75,
               transform: "rotate(5deg)",
-              height: 200,
-              width: 200,
             }}
           >
-            <img src="/img/screenshot_home.png" />
+            <img src="/img/logo.png" />
           </div>
         </div>
       </div>
-      <main>
+      <main className="main-container">
         {features && features.length > 0 && (
           <section className={styles.features}>
             <div className="container">
@@ -125,6 +120,31 @@ function Home() {
           </section>
         )}
       </main>
+      <div className="container">
+        <div class="row">
+          <div class="col col--6">
+            <h1>Want to see it in action?</h1>
+            <p>Login: admin@admin.com & 1234</p>
+            <p>
+              We have a ready to go demo which can be accessed using the link
+              below.
+            </p>
+            <a href="https://demo.pmint.dev/" target="_blank">
+              <button class="button button--primary">Demo</button>
+            </a>
+          </div>
+          <div class="col col--6 ">
+            <div
+              style={{
+                transform: "rotate(-5deg)",
+                marginBottom: 35,
+              }}
+            >
+              <img src="/img/screenshot_home.png" />
+            </div>
+          </div>
+        </div>
+      </div>
     </Layout>
   );
 }
