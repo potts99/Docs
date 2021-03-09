@@ -1,6 +1,7 @@
 ---
 id: gettingStarted
 title: Getting Started
+slug: /
 ---
 
 ### Welcome to Peppermint 🍵

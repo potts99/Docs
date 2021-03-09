@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Peppermint',
   tagline: 'An open source ticket management system',
-  url: 'https://pmint.dev',
+  url: 'https://docs.pmint.dev',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -16,12 +16,6 @@ module.exports = {
         src: 'img/logo.png',
       },
       items: [
-        {
-          to: 'docs/gettingStarted',
-          activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'left',
-        },
         {to: 'blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/Peppermint-Lab/Peppermint',
@@ -38,11 +32,11 @@ module.exports = {
           items: [
             {
               label: 'Getting Started',
-              to: 'docs/gettingStarted',
+              to: 'gettingStarted',
             },
             {
               label: 'Contributions',
-              to: 'docs/contributions',
+              to: 'contributions',
             },
           ],
         },
@@ -77,6 +71,7 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
         },
         theme: {
