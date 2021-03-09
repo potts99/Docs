@@ -1,6 +1,7 @@
 ---
 id: features
 title: Current Features
+slug: /features
 ---
 
 #### These are the current features implememented in the production release of peppermint.

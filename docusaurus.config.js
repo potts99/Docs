@@ -3,7 +3,7 @@ module.exports = {
   tagline: 'An open source ticket management system',
   url: 'https://docs.pmint.dev',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'Peppermint-Lab', // Usually your GitHub org/user name.
@@ -65,6 +65,11 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Peppermint-Labs, Inc. Built with Docusaurus.`,
     },
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: true,
+      respectPrefersColorScheme: true,
+      },
   },
   presets: [
     [

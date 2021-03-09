@@ -1,6 +1,7 @@
 ---
 id: soon
 title: In the Pipeline
+slug: /soon
 ---
 
 ### Below is a list of features we are looking to implement 

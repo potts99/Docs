@@ -1,6 +1,7 @@
 ---
 id: contributions
 title: Contributing to the project
+slug: /contributions
 ---
 
 ### This page is intended for use if you have any plans to potentially fix any bugs or add any features that you have thought of that we haven't.
