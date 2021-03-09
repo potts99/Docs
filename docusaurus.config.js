@@ -32,7 +32,7 @@ module.exports = {
           items: [
             {
               label: 'Getting Started',
-              to: 'gettingStarted',
+              to: '/',
             },
             {
               label: 'Contributions',
