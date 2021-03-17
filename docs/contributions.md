@@ -53,16 +53,15 @@ Move the build folder into the root of the project folder.
 Use the following docker-compose to create a local build of the codebase. After completing the client build above.
 
 ```
-version: '3.1'
+version: "3.1"
 
 services:
-
   mongo:
     container_name: db
     image: mongo:4
     restart: always
     volumes:
-    - ./docker-data/db:/data/db
+      - ./docker-data/db:/data/db
 
   client:
     container_name: peppermint
@@ -72,6 +71,11 @@ services:
     restart: on-failure
     depends_on:
       - mongo
+    environment:
+      MONGO_URI_DOCKER: "mongodb://mongo:27017/peppermint"
+      JWT_SECRET: "ZwfJtS3muY65CaeZ" # This is an example secret
+      PORT: 5000
+
 ```
 
 ### Pull Requests
