@@ -11,16 +11,15 @@ Currently the only deployment we currently offer is through a docker image with 
 
 
 ```
-version: '3.1'
+version: "3.1"
 
 services:
-
   mongo:
     container_name: db
     image: mongo:4
     restart: always
     volumes:
-    - ./docker-data/db:/data/db
+      - ./docker-data/db:/data/db
 
   client:
     container_name: peppermint
@@ -30,6 +29,11 @@ services:
     restart: on-failure
     depends_on:
       - mongo
+    environment:
+      MONGO_URI_DOCKER: "mongodb://mongo:27017/peppermint"
+      JWT_SECRET: "ZwfJtS3muY65CaeZ" # This is an example secret
+      PORT: 5000
+
 ```
 
 Currently the database we use is mongoDB & as things stand that will be our DB of choice going forward with no current plans on supporting other choices, although this could change. 
