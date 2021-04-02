@@ -20,7 +20,7 @@ Once you have everyone downloaded you need to copy the example.env folder inside
 ```
 NODE_ENV=development
 PORT=5000
-MONGO_URI='' 
+MONGO_URI_DEV='' 
 JWT_SECRET=''
 ```
 
