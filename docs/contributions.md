@@ -27,9 +27,10 @@ JWT_SECRET=''
 After all this has been fill in you need to install the variables on both the server and client.
 
 ```
-npm install
+npm i
+npm i -g mongo-seeding-cli
 cd client 
-npm install
+npm i --legacy-peer-deps
 ```
 
 Once the node modules are fully installed you can go back to the root of the project and run 
