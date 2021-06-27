@@ -14,12 +14,16 @@ Currently the only deployment we currently offer is through a docker image with 
 version: "3.1"
 
 services:
-  mongo:
-    container_name: db
-    image: mongo:4
+  postgres:
+    container_name: postgres
+    image: postgres:latest
     restart: always
     volumes:
       - ./docker-data/db:/data/db
+    environment: 
+      POSTGRES_USER: peppermint
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_DB: peppermint
 
   client:
     container_name: peppermint
@@ -28,12 +32,12 @@ services:
       - 5000:5000
     restart: on-failure
     depends_on:
-      - mongo
+      - postgres
     environment:
-      MONGO_URI_DOCKER: "mongodb://mongo:27017/peppermint"
-      JWT_SECRET: "ZwfJtS3muY65CaeZ" # This is an example secret
+      JWT_SECRET: 'ZwfJtS3muY65CaeZ' 
       PORT: 5000
-
+      DB_USERNAME: peppermint
+      DB_PASSWORD: 1234
+      DB_HOST: 'postgres'
 ```
 
-Currently the database we use is mongoDB & as things stand that will be our DB of choice going forward with no current plans on supporting other choices, although this could change. 
