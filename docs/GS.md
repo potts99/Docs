@@ -2,6 +2,7 @@
 id: gettingStarted
 title: Getting Started
 slug: /
+sidebar_position: 1 
 ---
 
 ### Welcome to Peppermint 🍵
