@@ -13,6 +13,7 @@ Secondly, in order to get started git clone or fork the main branch on <a href="
 Node
 Postgres Server
 ```
+
 If you have all these you should have no issues in developing locally on your machine. 
 Once you have everyone downloaded you need to copy the example.env folder inside config and fill in the enviroment variables needed to get started.
 
@@ -29,26 +30,20 @@ DATABASE_URL = "postgresql://${DB_USERNAME}:${DB_PASSWORD}@${DB_HOST}:5432/peppe
 After all this has been fill in you need to install the variables on both the server and client.
 
 ```
-npm i
-cd client 
-npm i --legacy-peer-deps
-cd ..
-npm run docker
+yarn 
+yarn run migrate
+yarn run seed
 ```
 
 Once the node modules are fully installed and the db is seeded you can go back to the root of the project and run 
 ```
-npm run dev
+yarn dev
 ```
 
 This will run the backend and front end will run together using the concurrently and will refresh on any changes made to the codebase.
 
 ### Docker 
 
-When using docker to test your changes the see how things act in a production enviroment you need to create a build for the front end. Use the following to re-create this. 
-```
-./build.sh
-```
 
 This will build a new client and move it to the root
 
@@ -73,7 +68,7 @@ services:
 
   client:
     container_name: peppermint
-    image: pepperlabs/peppermint:latest
+    build: .
     ports:
       - 5000:5000
     restart: on-failure
