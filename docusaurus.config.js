@@ -50,7 +50,7 @@ const config = {
           //   position: 'right',
           //   label: 'Docs',
           // },
-          {to: '/blog', label: 'Blog', position: 'right'},
+          // {to: '/blog', label: 'Blog', position: 'right'},
           {
             href: 'https://github.com/potts99/peppermint',
             label: 'GitHub',
@@ -90,10 +90,10 @@ const config = {
           {
             title: 'More',
             items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
+              // {
+              //   label: 'Blog',
+              //   to: '/blog',
+              // },
               {
                 label: 'GitHub',
                 href: 'https://github.com/potts99/peppermint',
