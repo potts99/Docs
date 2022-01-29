@@ -44,7 +44,7 @@ This will give you options to add in your db details and PORT etc
 
 Running the launch script will install the revelant modules & run pm2
 ```
-yarn run pm2
+yarn run pm2-prod
 ```
 
 By default peppermint will be available on port 3000 
