@@ -44,6 +44,8 @@ This will give you options to add in your db details and PORT etc
 
 Running the launch script will install the revelant modules & run pm2
 ```
+yarn
+
 yarn run pm2-prod
 ```
 
